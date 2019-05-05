@@ -36,7 +36,7 @@ class GameVC: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         // Load Roboy Node
         let ufoScene = SCNScene(named: "RoboyUfo.dae")
         let ufoNode = ufoScene?.rootNode.childNode(withName: "UFO", recursively: true)
-        ufoNode?.scale = SCNVector3Make(0.19, 0.19, 0.19)
+        ufoNode?.scale = SCNVector3Make(0.20, 0.20, 0.20)
         
         roboyNode = ufoNode
         sceneView.delegate = self
