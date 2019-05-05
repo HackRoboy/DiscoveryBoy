@@ -63,6 +63,8 @@ class GameController {
         self.gameView = (mainStoryboard.instantiateViewController(withIdentifier: "GameVC") as! GameVC)
         UIApplication.shared.keyWindow?.rootViewController = self.gameView
         
+        self.playerData = PlayerData(lives: 3, collected: 0, difficulty: 0, time: 0)
+        
         self.startGame()
         self.gameView.spawnIceCream()
     }
