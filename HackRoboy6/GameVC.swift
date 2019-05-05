@@ -73,7 +73,7 @@ class GameVC: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let configuration = ARWorldTrackingConfiguration()
+        let configuration = AROrientationTrackingConfiguration()
         
         //configuration.planeDetection = [.horizontal, .vertical]
         
