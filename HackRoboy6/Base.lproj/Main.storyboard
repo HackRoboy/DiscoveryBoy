@@ -13,7 +13,7 @@
         <!--LoadingVC-->
         <scene sceneID="den-cL-G67">
             <objects>
-                <viewController id="kDL-Za-PMb" customClass="LoadingVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingVC" id="kDL-Za-PMb" customClass="LoadingVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uhh-jm-PM1">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,10 +124,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ei-KW-Yg8">
+                                <rect key="frame" x="531" y="435" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="pks-SF-Jsr" eventType="touchUpInside" id="hiy-gH-DXp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5fU-dT-jpc" firstAttribute="centerX" secondItem="Sof-EE-ggw" secondAttribute="centerX" id="7og-u6-Ipv"/>
+                            <constraint firstItem="7ei-KW-Yg8" firstAttribute="centerX" secondItem="Sof-EE-ggw" secondAttribute="centerX" id="U3F-EY-HaW"/>
+                            <constraint firstItem="7ei-KW-Yg8" firstAttribute="top" secondItem="5fU-dT-jpc" secondAttribute="bottom" constant="7.5" id="Upq-mf-CT4"/>
                             <constraint firstItem="5fU-dT-jpc" firstAttribute="centerY" secondItem="Sof-EE-ggw" secondAttribute="centerY" id="qrA-bw-dWv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H4o-Yh-HW7"/>
@@ -151,11 +160,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jf-9Q-uG1">
+                                <rect key="frame" x="531" y="435" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="7Vd-oT-Fgr" eventType="touchUpInside" id="nbP-yP-FM3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0jf-9Q-uG1" firstAttribute="centerX" secondItem="sar-2Z-9uZ" secondAttribute="centerX" id="1Gd-Nl-H3T"/>
                             <constraint firstItem="OxN-OV-Kc9" firstAttribute="centerY" secondItem="sar-2Z-9uZ" secondAttribute="centerY" id="BA7-76-DhT"/>
                             <constraint firstItem="OxN-OV-Kc9" firstAttribute="centerX" secondItem="sar-2Z-9uZ" secondAttribute="centerX" id="EDH-9L-mUk"/>
+                            <constraint firstItem="0jf-9Q-uG1" firstAttribute="top" secondItem="OxN-OV-Kc9" secondAttribute="bottom" constant="7.5" id="jyH-4S-Ifu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jl1-cT-wv4"/>
                     </view>

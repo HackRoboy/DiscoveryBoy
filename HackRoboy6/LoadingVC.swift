@@ -11,6 +11,6 @@ class LoadingVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        _ = GameController.shared()
+        _ = GameController.shared().setupGame()
     }
 }

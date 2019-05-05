@@ -53,7 +53,7 @@ class GameController {
     var updateTimerValue: Double = 0
     
     init() {
-        self.setupGame()
+        //self.setupGame()
     }
     
     func setupGame() {

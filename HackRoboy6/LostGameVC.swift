@@ -2,6 +2,15 @@ import Foundation
 import UIKit
 
 class LostGameVC: UIViewController {
+    
+    @IBOutlet var restartGame: UIButton!
+    
+    @IBAction func restartButtonTapped(_ sender: Any) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        UIApplication.shared.keyWindow?.rootViewController = (mainStoryboard.instantiateViewController(withIdentifier: "LoadingVC") as! LoadingVC)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
