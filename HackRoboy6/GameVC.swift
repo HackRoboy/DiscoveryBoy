@@ -51,7 +51,7 @@ class GameVC: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         
         self.uiLivesNodes = self.createTextNode(string: "Lives: 3", pos: SCNVector3Make(0.2, 0.28, -1))
         self.sceneView.scene.rootNode.addChildNode(self.uiLivesNodes)
-        self.uiCollectedNodes = self.createTextNode(string: "Ice: 0", pos: SCNVector3Make(-0.5, 0.28, -1))
+        self.uiCollectedNodes = self.createTextNode(string: "Ice: 0/15", pos: SCNVector3Make(-0.6, 0.28, -1))
         self.sceneView.scene.rootNode.addChildNode(self.uiCollectedNodes)
         
         let lightNode = SCNNode()

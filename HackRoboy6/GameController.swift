@@ -98,12 +98,12 @@ class GameController {
                 self.gameView.iceCreamNode.removeFromParentNode()
                 self.playerData.collected += 1
                 self.gameView.uiCollectedNodes.removeFromParentNode()
-                self.gameView.uiCollectedNodes = self.gameView.createTextNode(string: "Ice: \(self.playerData.collected)", pos: SCNVector3Make(-0.5, 0.28, -1))
+                self.gameView.uiCollectedNodes = self.gameView.createTextNode(string: "Ice: \(self.playerData.collected)/15", pos: SCNVector3Make(-0.5, 0.28, -1))
                 self.gameView.sceneView.scene.rootNode.addChildNode(self.gameView.uiCollectedNodes)
                 
                 if(self.playerData.collected % 5 == 0) {
                     self.playerData.difficulty += 1
-                    if(self.playerData.difficulty > 4) {
+                    if(self.playerData.difficulty > 2) {
                         self.gameStatus = GameStatus.WIN
                     } else {
                         SoundController.shared().playSound(soundFileName: "oh-jeah-01")
